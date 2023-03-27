@@ -1,20 +1,20 @@
 //! Application routing and messaging enumerations.
 
 mod pages;
-pub use pages::{CounterPage, MainPage};
+pub use pages::{CounterPage, HomePage};
 
 /// Used for navigation or 'routing' between pages in the application.
 #[derive(Debug, Clone, Copy)]
 pub enum Navigation {
     /// Applications home page.
-    MainPage,
+    HomePage,
     /// Displays the count.
     CounterPage,
 }
 
 impl Default for Navigation {
     fn default() -> Self {
-        Self::MainPage
+        Self::HomePage
     }
 }
 

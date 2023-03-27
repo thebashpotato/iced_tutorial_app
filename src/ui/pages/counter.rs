@@ -50,7 +50,7 @@ impl CounterPage {
                 .spacing(self.padding)
                 .push(
                     Button::new(Text::new("Back to the main page"))
-                        .on_press(AppMessage::Router(Navigation::MainPage)),
+                        .on_press(AppMessage::Router(Navigation::HomePage)),
                 )
                 .spacing(self.padding),
         )

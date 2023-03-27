@@ -5,7 +5,7 @@ mod state;
 use iced::{Element, Sandbox};
 use state::State;
 
-use crate::ui::{AppMessage, CounterPage, MainPage, Navigation};
+use crate::ui::{AppMessage, CounterPage, HomePage, Navigation};
 
 /// The final application, it holds the state, page routing, and the actual
 /// pages the load into the view.
@@ -15,8 +15,8 @@ pub struct App {
     state: State,
     /// Trigger to route to a different page.
     current_route: Navigation,
-    /// The main page view.
-    main_page: MainPage,
+    /// The home page view.
+    home_page: HomePage,
     /// The counter page view.
     counter_page: CounterPage,
 }
@@ -56,7 +56,7 @@ impl Sandbox for App {
     /// occupy our view.
     fn view(&self) -> Element<'_, Self::Message> {
         match self.current_route {
-            Navigation::MainPage => self.main_page.view(),
+            Navigation::HomePage => self.home_page.view(),
             Navigation::CounterPage => self.counter_page.view(*self.state.counter()),
         }
     }

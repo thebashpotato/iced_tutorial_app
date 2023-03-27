@@ -1,7 +1,7 @@
 //! Each page is defined here.
 
 mod counter;
-mod main;
+mod home;
 
 pub use counter::CounterPage;
-pub use main::MainPage;
+pub use home::HomePage;

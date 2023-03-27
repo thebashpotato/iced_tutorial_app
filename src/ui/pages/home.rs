@@ -9,14 +9,14 @@ use crate::ui::{AppMessage, Navigation};
 /// Represent the main or home page.
 #[allow(clippy::module_name_repetitions)]
 #[derive(Debug, Clone)]
-pub struct MainPage {
+pub struct HomePage {
     /// Text for label.
     label_text: String,
     /// Padding between widgets in column.
     padding: u16,
 }
 
-impl Default for MainPage {
+impl Default for HomePage {
     fn default() -> Self {
         Self {
             label_text: String::from("Welcome to the Counter App"),
@@ -25,7 +25,7 @@ impl Default for MainPage {
     }
 }
 
-impl MainPage {
+impl HomePage {
     /// This is where we draw our GUI for the main page. Should return an iced
     /// element that will occupy our view. It doesn't do much, but provide a
     /// button to go to the counter page.
