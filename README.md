@@ -1,5 +1,3 @@
-# iced_tutorial_app
-
 <div align="center">
   <h1>iced_tutorial_app</h1>
   <img src="assets/vsm-usage.gif">
