@@ -1,12 +1,12 @@
 <div align="center">
-  <h1>iced_tutorial_app</h1>
+  <h1>Iced Tutorial Application</h1>
   <img src="assets/vsm-usage.gif">
 </div>
 <br>
 <div align="center">
   <img alt="Standard Readme" src="https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square">
   <br>
-  <p>Trying to make a iced-rs app which is well documented in an effort to help the lack of documentation for the gui framework</p>
+  <p>An attempt make an Iced app which is well documented in an effort to help the lack of documentation for the gui framework</p>
 </div>
 
 ## Table of Contents
